@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <h3>HTML FORMS</h3>
+    <form action="bbackend.js">
+
+        <label for="name"> Name
+            <div>
+                <input type="text" id="name">
+                <!--In lable tag, value of "for" attribute should be the same as value of "id" attribute in input tag for which the lable is used-->
+            </div>
+        </label>
+        <br>
+
+        <label for="form"> Password
+            <div>
+                <input type="password" id="form">
+            </div>
+        </label>
+        <br>
+
+        <label for="roll"> Roll
+            <div>
+                <input type="text" id="roll">
+            </div>
+        </label>
+        <br>
+
+        <label for="bonus"> Bonus
+            <div>
+                <input type="number" id="bonus">
+            </div>
+        </label>
+        <br>
+
+        <label for="email"> Email
+            <div>
+                <input type="email" id="email" name="myEmail" placeholder="abc@gmail.com">
+            </div>
+        </label>
+        <br>
+
+        <label for="feedback"> Feedback
+            <div>
+                <textarea name="myTextArea" id="feedback" rows="3"></textarea>
+            </div>
+        </label>
+        <br>
+
+        <label for="eligibility"> Are you eligible
+            <input type="checkbox" id="eligibility">
+        </label>
+        <br>
+        <br>
+
+        Gender:
+        <label for="male">
+            <input type="radio" name="myGender" id="male">Male
+        </label>
+        <label for="fem">
+            <input type="radio" name="myGender" id="fem">Female
+        </label>
+        <label for="other">
+            <input type="radio" name="myGender" id="other">Other
+        </label>
+        <br><br>
+
+        <label for="car">Car
+            <select name="myCar" id="car">
+                <option name="Car" value="b" selected>Beat</option>
+                <option name="Car" value="a">Audi</option>
+                <option name="Car" value="m">Mercedes</option>
+                <option name="Car" value="p">Polo</option>
+            </select>
+        </label>
+        <br><br>
+
+
+        <div>
+            <input type="submit" value="submit">
+        </div>
+        <br>
+
+        <label for="res">
+            <div>
+                <input type="reset" id="res" value="Reset">
+            </div>
+        </label>
+        <br>
+
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Fonts</title>
+
+    <!-- Imported font style  from google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap" rel="stylesheet">
+
+
+    <style>
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 23px;
+            /* px = 1/96th of an inch */
+            line-height: 1.3em;
+        }
+
+        span {
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        /* Google imported font class */
+        .sofadi-one-regular {
+            font-family: "Sofadi One", system-ui;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <h4>CSS Fonts Training</h4>
+    
+    <p>Lorem ipsum dolor sit amet <span>Fonts</span> consectetur, adipisicing elit. Expedita, obcaecati?</p>
+    
+    <p class="sofadi-one-regular">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium perspiciatis voluptas dolore provident consectetur beatae illo nesciunt temporibus iusto ullam? consectetur, adipisicing elit. Expedita, obcaecati?</p>
+</body>
+
+</html>

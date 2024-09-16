@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        
+        /* Element Selector */
+        p
+        {
+            color: red;
+        }
+
+        /* Id Selector */
+        #colorRed
+        {
+            color: rgb(50, 169, 88);
+        }
+
+        /* Class Selector */
+        .colorback
+        {
+            background-color: blueviolet;
+        }
+
+        /* Group Selector */
+        footer, span
+        {
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>CSS Selectors</h3>
+
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+    <p id="colorRed">Lorem ipsum dolor sit amet consectetur.</p>
+
+    <p id="colorRed" class="colorback">Lorem ipsum dolor sit amet consectetur.</p>
+
+    <div>     
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+    </div>
+
+    <span>This is span</span>
+    <footer>This is footer</footer>
+
+</body>
+</html>
