@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        
+        /* Universal selector */
+        *{
+            /* This will not let change width and height of an element when padding/margin is changed */
+            box-sizing: border-box;
+
+            /* can be override in below css */
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body{
+            background-color: rgb(141 133 167);
+        }
+
+        .containerFirst{
+            background-color: rgb(177, 156, 129);
+            border: solid 3px rgb(22, 120, 155);
+            width: 700px;
+            height: 100px;
+            padding: 90px; /* This sets padding in all direction */
+            margin: 20px;  /* This sets margin in all direction */
+        }
+
+        .containerSecond{
+            background-color: rgb(177, 156, 129);
+            border: solid 3px rgb(22, 120, 155);
+            width: 700px;
+            height: 100px;
+
+            /* Padding/Margin in specific direction */
+            /* padding: 90px;
+            padding-top: 80px;
+            padding-right: 40px;
+            padding-bottom: 33px;
+            padding-left: 99px; */
+
+            /* padding/margin - top right bottom left */
+            /* padding: 60px 50px 20px 10px;  */
+            /* margin: 20px 30px 40px 50px; */
+
+            /* padding/margin - x(left right) y(top bottom) */
+            padding: 33px 56px;
+            margin: 20px 70px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="containerFirst">
+        <h3>My Heading</h3>
+        <p id="first">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat amet deserunt non corporis enim
+            odio minus cum unde, ipsum dolor?</p>
+    </div>
+
+    <div class="containerSecond">
+        <h3>My Heading</h3>
+        <p id="second">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat amet deserunt non corporis enim
+            odio minus cum unde, ipsum dolor?</p>
+    </div>
+
+    <div class="container">
+        <h3>My Heading</h3>
+        <p id="third">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat amet deserunt non corporis enim
+            odio minus cum unde, ipsum dolor?</p>
+    </div>
+
+</body>
+
+</html>

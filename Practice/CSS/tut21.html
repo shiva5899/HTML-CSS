@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Ubuntu Condensed", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .container {
+            width: 900px;
+            border: 3px solid rgb(74, 26, 74);
+            margin: 33px auto;
+            /* This will bring container in centre between left and right and 33px below from top*/
+            background-color: rgb(248, 163, 6);
+        }
+
+        .item {
+            border: 3px solid rgb(60, 43, 43);
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background: rgb(202, 195, 195);
+        }
+
+        #fruit {
+            float: left;
+            width: 48%;
+        }
+
+        #computer {
+            float: right;
+            width: 48%;
+        }
+
+        #stationary {
+            /* float: left; */
+            clear: both;
+            /* by using this, stationary element is not bothered anymore by float property used in other element's css*/
+            width: 99.35%;
+        }
+
+        p,
+        h3 {
+            text-align: right;
+            text-align: left;
+            text-align: center;
+            text-align: justify;
+            /* This line will override all above text-align properties in this block */
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>WELCOME TO MY STORE</h1>
+        <div class="item" id="fruit">
+            <h3>Fruits</h3>
+            <p class="para" id="fruitPara">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, rem?
+                Eveniet non sed in! Sequi neque facilis inventore aliquid enim maxime ipsam et dolore similique
+                architecto, est perspiciatis quasi consequuntur. Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Deserunt, saepe architecto non laboriosam consequuntur sed a incidunt quaerat iste nostrum nihil
+                vel id, itaque praesentium ut aliquam, quis doloremque asperiores sunt. Vitae?</p>
+        </div>
+
+        <div class="item" id="computer">
+            <h3>Computer</h3>
+            <p class="para" id="computerPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit doloribus
+                soluta neque ut quam vel quos provident nesciunt, molestiae exercitationem cumque dolorem cum, delectus
+                quo eum fuga sint minima obcaecati?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis animi
+                eveniet ducimus corporis obcaecati? Accusantium ipsa autem corrupti ipsam ratione. Reiciendis voluptatem
+                tempora voluptatum labore voluptas laborum alias, suscipit ipsum sed nam?
+
+            </p>
+        </div>
+
+        <div class="item" id="stationary">
+            <h3>Stationary</h3>
+            <p class="para" id="stationaryPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit doloribus
+                soluta neque ut quam vel quos provident nesciunt, molestiae exercitationem cumque dolorem cum, delectus
+                quo eum fuga sint minima obcaecati? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut,
+                totam? Quod assumenda ab minus aperiam numquam ipsam voluptates architecto doloribus. Cumque aliquid
+                magnam perferendis sunt numquam voluptas minus repellat vel rem dolorem!
+            </p>
+        </div>
+
+        <div class="item" id="glass">
+            <h3>Glass</h3>
+            <p class="para" id="glassPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit doloribus soluta
+                neque ut quam vel quos provident nesciunt, molestiae exercitationem cumque dolorem cum, delectus quo eum
+                fuga sint minima obcaecati? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, totam? Quod
+                assumenda ab minus aperiam numquam ipsam voluptates architecto doloribus. Cumque aliquid magnam
+                perferendis sunt numquam voluptas minus repellat vel rem dolorem!
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
