@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+</head>
+<style>
+    h1 {
+        background-color: red;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    /* div li p{
+        background-color: greenyellow;
+        color: darkmagenta;
+        font-weight: bold;
+    } */
+
+    /* affects direct child (if p is direct/first child of div)*/
+    /* div > p{
+        background-color: greenyellow;
+        color: darkmagenta;
+        font-weight: bold;
+    } */
+
+    /* affects next sibling (next sibling of div in that parent) */
+    div+p {
+        background-color: greenyellow;
+        color: darkmagenta;
+        font-weight: bold;
+    }
+</style>
+
+<body>
+    <h1>More on Selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item">
+                    <p>Paragraph in List Item</p>
+                </li>
+                <li>Not Affected</li>
+                <p>para inside ul</p>
+            </ul>
+            <p>Row Paragraph</p>
+        </div>
+        <p>Container Paragraph</p>
+    </div>
+    <p>Outer Paragraph</p>
+</body>
+
+</html>
