@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes and Animations</title>
+    <style>
+        .container {
+            background-color: greenyellow;
+        }
+
+        .box {
+            background-color: red;
+            width: 250px;
+            height: 250px;
+            position: relative;
+            /* animation-name: shiv1; */
+            /* animation-name: shiv2; */
+            animation-name: shiv;
+            animation-duration: 2s;
+            animation-iteration-count: 3;
+            /* animation-iteration-count: infinite; */
+            /* animation-fill-mode: forwards; fills to{} properties at end */
+            /* animation-fill-mode: alternate; fills to{} properties at end */
+            /* animation-fill-mode: ease-in; */
+            /* animation-fill-mode: ease-out; */
+            /* animation-fill-mode: ease-in-out; */
+            /* animation-delay: 2s;  delays by 2s */
+            /* animation-direction: alternate; */
+            /* animation-direction: alternate-reverse; */
+            /* animation-direction: reverse; */
+
+            /* animation short hand */
+            /* animation: name, duration, timing-function(fill-mode), delay, interation-count, direction; */
+            animation: shiv 3s ease-in 2s 3 alternate;
+        }
+
+        @keyframes shiv1 {
+            from {
+                width: 200px;
+            }
+
+            to {
+                width: 1400px;
+            }
+        }
+
+        @keyframes shiv2 {
+            0% {
+                top: 0;
+                left: 0;
+                background-color: purple;
+            }
+
+            25% {
+                top: 250px;
+                left: 0;
+                background-color: orange;
+            }
+
+            50% {
+                top: 250px;
+                left: 250px;
+                background-color: aqua;
+            }
+
+            75% {
+                top: 0;
+                left: 250px;
+                background-color: black;
+            }
+
+            100% {
+                top: 0;
+                left: 0;
+                background-color: white;
+            }
+        }
+
+        @keyframes shiv {
+            0% {
+                top: 0;
+                left: 0;
+                background-color: purple;
+            }
+
+            25% {
+                top: 250px;
+                left: 0;
+                background-color: orange;
+            }
+
+            50% {
+                top: 250px;
+                left: 250px;
+                background-color: aqua;
+            }
+
+            75% {
+                top: 0;
+                left: 250px;
+                background-color: black;
+            }
+
+            100% {
+                top: 0;
+                left: 0;
+                background-color: white;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            This is a Box
+        </div>
+    </div>
+</body>
+
+</html>
