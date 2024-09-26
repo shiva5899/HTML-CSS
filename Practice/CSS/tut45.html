@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid - Media Queries</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                "navbar navbar navbar navbar"
+                "section section section aside"
+                "footer footer footer footer"
+            ;
+        }
+
+        .bdr {
+            border: 2px solid black;
+            background-color: aqua;
+            padding: 10px 23px;
+        }
+
+        nav {
+            grid-area: navbar;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+
+        @media only screen and (max-width:300px) {
+            body {
+                background-color: orange;
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (min-width:300px) and (max-width:500px) {
+            body {
+                background-color: skyblue;
+            }
+
+            .container {
+                grid-template-areas:
+                    "navbar navbar navbar navbar"
+                    "section section section section"
+                    "aside aside aside aside"
+                    "footer footer footer footer";
+            }
+
+            aside {
+                display: none;
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media (min-width:500px) and (max-width:800px) {
+            body {
+                background-color: rgb(34, 230, 34);
+            }
+
+            .container {
+                grid-template-areas:
+                    "navbar navbar navbar navbar"
+                    "section section section section"
+                    "aside aside aside aside"
+                    "footer footer footer footer";
+            }
+        }
+
+        @media (min-width:800px) {
+            body {
+                background-color: whitesmoke;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>Home</span>
+            <span>About</span>
+            <span>Services</span>
+            <span>Join</span>
+        </nav>
+
+        <section class="bdr">
+            <h2>HTML & CSS Tutorials</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id deleniti saepe aliquid reprehenderit sed
+                voluptatibus, nesciunt asperiores exercitationem totam dolorum, optio nemo quaerat perferendis tenetur,
+                nobis quo dicta necessitatibus unde! Autem quos ipsam necessitatibus quod iste quidem, placeat id enim
+                fugit soluta dolor praesentium veniam est ad itaque ex reprehenderit alias commodi officiis!
+                Necessitatibus sapiente doloribus molestiae ad odit praesentium reiciendis aliquam, harum impedit
+                aliquid quasi fugiat expedita quibusdam beatae, tempora, earum libero id iste corporis nulla delectus.
+                Explicabo minus commodi sequi facere quod? Eaque est laboriosam, ipsum omnis qui fugiat dicta iure iste
+                consequatur, quasi commodi non distinctio debitis voluptates dignissimos tenetur pariatur ducimus!
+                Cupiditate recusandae iure laudantium? Libero omnis et vel voluptatem nesciunt labore odio repudiandae,
+                nostrum iste quibusdam repellat ullam dicta autem aperiam officiis minus obcaecati, sit sed. Nisi
+                obcaecati itaque, voluptatibus repudiandae temporibus omnis rerum dolorum, voluptates sint tenetur
+                nesciunt doloribus iure, neque consequatur ea similique non tempora consequuntur. Aperiam error fuga
+                explicabo dolor officiis. Iure magnam, quos quas sequi nemo quia repudiandae minima suscipit
+                voluptatibus est ratione obcaecati architecto voluptas dolorem voluptates, explicabo eveniet dignissimos
+                quod doloremque esse quidem labore dicta laborum rerum. Aspernatur, pariatur iusto, dolor nam, porro quo
+                saepe necessitatibus tempore culpa veritatis labore a molestias neque! Hic animi saepe veritatis vero
+                accusantium consequuntur dicta necessitatibus consectetur, quidem praesentium ipsam beatae esse id
+                dignissimos vel quia tempora odit perspiciatis ut doloremque aliquid repudiandae excepturi. Doloribus
+                dolorem unde natus quae mollitia est quisquam. Eveniet sapiente repellendus eius ab facilis, inventore
+                harum debitis est cum commodi aspernatur nesciunt assumenda ullam asperiores molestias officia atque
+                porro numquam pariatur earum ratione dolorum suscipit quisquam dolore? Architecto consectetur
+                perspiciatis excepturi veritatis minus possimus asperiores eius commodi quia animi, aspernatur quisquam
+                illo nam, tempora alias id, minima voluptatem magnam facilis ad ducimus in temporibus enim tempore. Eum
+                quidem corporis reiciendis cum nobis. Blanditiis doloribus debitis sint omnis magnam inventore sit
+                doloremque totam, quidem non, optio culpa commodi facere. Est et accusamus minus, consequuntur quo
+                ducimus voluptatum ad numquam reprehenderit rerum id amet nesciunt officiis voluptate dolores debitis
+                dolorum? Quisquam hic eius magnam soluta officiis recusandae eos, deserunt temporibus, facilis ducimus
+                excepturi corporis iure maxime quidem doloribus illo odit nostrum! Aliquid itaque perferendis similique
+                nam maiores minima id odio delectus accusamus. Dolores voluptates inventore quas repellendus enim qui
+                voluptatibus incidunt porro similique excepturi in dignissimos eos ipsum corporis facere, fugit sunt
+                adipisci veniam deserunt laborum animi eum cupiditate? Nostrum, delectus.</p>
+        </section>
+
+        <aside class="bdr">
+            More on this...
+        </aside>
+    </div>
+
+    <footer class="bdr">
+        Copyright Shivmax 2024
+    </footer>
+</body>
+
+</html>
