@@ -136,7 +136,7 @@ html {
     height: 50px;
     border-radius: 23px;
     padding: 3px 14px;
-    color: white;
+    color: rgb(255, 255, 255);
     font-family: "Mako", sans-serif;
     font-weight: 100;
     font-style: italic;
