@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Exception- transform, filter or perspective properties can also make an element appear as positioned */
+
+        .parent{
+            border: 2px solid rebeccapurple;
+            margin: 34px;
+            padding: 43px;
+            background-color: tomato;
+            /* position: absolute; */
+            /* transform: translate(0); */
+            /* filter: invert(0); */
+            perspective: 0;
+        }
+
+        .box {
+            border: 2px solid red;
+            height: 433px;
+            width: 80vw;
+            padding: 3px;
+            margin: 3px;
+        }
+
+        .box1 {
+            background-color: orange;
+            /* position: sticky; will stick to top when scrolled down */
+            /* top: 0px; */
+            /* position: relative; */
+            /* z-index: 1; */
+        }
+
+        .box2 {
+            background-color: wheat;
+            /* position: relative;  relative to its parent */
+            /* top: -74px; */
+            /* left: 58px; */
+        }
+
+        .box3 {
+            background-color: skyblue;
+            /* position: fixed; will be fixed in that position*/
+            /* bottom: 0; */
+
+        }
+
+
+        .box4 {
+            background-color: greenyellow;
+            /* position: absolute;  this box will set his positiion as per his 1st "positioned" parent */
+            position: absolute;
+            top: 0px;
+            /* z-index: 1; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+</body>
+
+</html>
